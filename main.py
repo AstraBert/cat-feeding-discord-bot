@@ -37,7 +37,7 @@ async def on_ready() -> None:
             f"Connected to the channel: {discord_channel.name} ({discord_channel.id})"  # type: ignore
         )
 
-        await discord_channel.send(  # type: ignore
+        logger.info(  # type: ignore
             "Status: active✅"
         )
     else:
